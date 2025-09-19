@@ -1,7 +1,13 @@
 import type { Config } from "@react-router/dev/config";
 
 export default {
+  // Disable SSR to make it a static SPA for GitHub Pages
+  ssr: false,
+  // Set the basename to match your GitHub Pages URL
+  // basename: "/portfolio",
+  // base: "/portfolio",
   // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
+  async prerender() {
+    return ["/"];
+  },
 } satisfies Config;
