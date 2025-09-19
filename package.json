@@ -9,7 +9,8 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "predeploy": "npm run build",
-    "deploy": "node scripts/copy-404.js && gh-pages -d build/client"
+    "deploy": "node scripts/copy-404.js && gh-pages -d build/client",
+    "sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
