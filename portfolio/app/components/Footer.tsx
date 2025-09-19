@@ -24,27 +24,7 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div className="flex space-x-6">
-            {SOCIAL_LINKS.map((social, index) => {
-              const IconComponent =
-                iconComponents[social.icon as keyof typeof iconComponents];
-              return (
-                <a
-                  key={index}
-                  href={social.url}
-                  target={social.url.startsWith("http") ? "_blank" : undefined}
-                  rel={
-                    social.url.startsWith("http")
-                      ? "noopener noreferrer"
-                      : undefined
-                  }
-                  className="p-3 rounded-full border border-primary/20 hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
-                >
-                  {IconComponent && <IconComponent className="w-5 h-5" />}
-                </a>
-              );
-            })}
-          </div>
+          <div className="flex space-x-6"></div>
         </div>
 
         <div className="border-t border-primary/10 mt-8 pt-8 text-center">

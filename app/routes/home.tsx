@@ -1,39 +1,36 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import { SITE_METADATA } from "@/lib/constants";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "MERN & React Native Developer | Portfolio" },
+    { title: SITE_METADATA.title },
     {
       name: "description",
-      content:
-        "Full-stack MERN developer specializing in React Native mobile apps, Node.js backends, and modern web development. View my portfolio and projects.",
+      content: SITE_METADATA.description,
     },
     {
       name: "keywords",
-      content:
-        "MERN developer, React Native, Node.js, MongoDB, Express, React, JavaScript, TypeScript, mobile development",
+      content: SITE_METADATA.keywords,
     },
-    { name: "author", content: "MERN & React Native Developer" },
-    { property: "og:type", content: "website" },
+    { name: "author", content: SITE_METADATA.author },
+    { property: "og:type", content: SITE_METADATA.og.type },
     {
       property: "og:title",
-      content: "MERN & React Native Developer | Portfolio",
+      content: SITE_METADATA.og.title,
     },
     {
       property: "og:description",
-      content:
-        "Full-stack MERN developer specializing in React Native mobile apps and modern web development.",
+      content: SITE_METADATA.og.description,
     },
-    { property: "twitter:card", content: "summary_large_image" },
+    { property: "twitter:card", content: SITE_METADATA.twitter.card },
     {
       property: "twitter:title",
-      content: "MERN & React Native Developer | Portfolio",
+      content: SITE_METADATA.twitter.title,
     },
     {
       property: "twitter:description",
-      content:
-        "Full-stack MERN developer specializing in React Native mobile apps and modern web development.",
+      content: SITE_METADATA.twitter.description,
     },
   ];
 }

@@ -1,24 +1,8 @@
 import { Badge } from "@/components/ui/badge";
+import { SKILL_CATEGORIES } from "@/lib/constants";
 
 export const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Frontend",
-      skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "Redux", "React Query"]
-    },
-    {
-      title: "Backend", 
-      skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL", "JWT", "Socket.io"]
-    },
-    {
-      title: "Mobile",
-      skills: ["React Native", "Expo", "iOS Development", "Android Development", "React Navigation", "AsyncStorage"]
-    },
-    {
-      title: "Tools & Others",
-      skills: ["Git", "Docker", "AWS", "Firebase", "Vercel", "Postman", "Jest", "ESLint", "Webpack", "Vite"]
-    }
-  ];
+  
 
   return (
     <section className="py-20 px-4 bg-secondary/30">
@@ -33,7 +17,7 @@ export const Skills = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
+          {SKILL_CATEGORIES.map((category, categoryIndex) => (
             <div 
               key={category.title} 
               className="animate-slide-up"

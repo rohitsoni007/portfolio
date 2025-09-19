@@ -10,6 +10,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { SITE_METADATA } from "@/lib/constants";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,22 +26,25 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => [
-  { title: "MERN & React Native Developer | Portfolio" },
-  { 
-    name: "description", 
-    content: "Full-stack MERN developer specializing in React Native mobile apps, Node.js backends, and modern web development. View my portfolio and projects." 
+  { title: SITE_METADATA.title },
+  {
+    name: "description",
+    content: SITE_METADATA.description,
   },
-  { 
-    name: "keywords", 
-    content: "MERN developer, React Native, Node.js, MongoDB, Express, React, JavaScript, TypeScript, mobile development" 
+  {
+    name: "keywords",
+    content: SITE_METADATA.keywords,
   },
-  { name: "author", content: "MERN & React Native Developer" },
-  { property: "og:type", content: "website" },
-  { property: "og:title", content: "MERN & React Native Developer | Portfolio" },
-  { property: "og:description", content: "Full-stack MERN developer specializing in React Native mobile apps and modern web development." },
-  { property: "twitter:card", content: "summary_large_image" },
-  { property: "twitter:title", content: "MERN & React Native Developer | Portfolio" },
-  { property: "twitter:description", content: "Full-stack MERN developer specializing in React Native mobile apps and modern web development." },
+  { name: "author", content: SITE_METADATA.author },
+  { property: "og:type", content: SITE_METADATA.og.type },
+  { property: "og:title", content: SITE_METADATA.og.title },
+  { property: "og:description", content: SITE_METADATA.og.description },
+  { property: "twitter:card", content: SITE_METADATA.twitter.card },
+  { property: "twitter:title", content: SITE_METADATA.twitter.title },
+  {
+    property: "twitter:description",
+    content: SITE_METADATA.twitter.description,
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
