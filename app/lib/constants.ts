@@ -46,7 +46,7 @@ export const SOCIAL_LINKS = [
 
 // About section content
 export const ABOUT_CONTENT = {
-  title: "About Me",
+  title: "About",
   description: "I'm a passionate full-stack developer with 4+ years of experience building modern web and mobile applications. I specialize in the MERN stack and React Native, creating solutions that are both technically robust and user-friendly.",
   journey: "Started as a frontend developer and evolved into full-stack development. I've worked with startups and enterprises, building everything from e-commerce platforms to social media apps. Always learning and adapting to new technologies to deliver the best solutions.",
   features: [
