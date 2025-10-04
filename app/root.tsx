@@ -80,8 +80,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+import { MainLayout } from "@/components/MainLayout";
+
 export default function App() {
-  return <Outlet />;
+  return (
+    <MainLayout>
+      <Outlet />
+    </MainLayout>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

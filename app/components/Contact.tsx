@@ -1,35 +1,9 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { useState } from "react";
-import { toast } from "sonner";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { CONTACT_CONTENT } from "@/lib/constants";
+import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast.success("Message sent successfully! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
   const iconMap = {
     Mail: Mail,
     Phone: Phone,
@@ -70,20 +44,38 @@ export const Contact = () => {
                     className="gradient-card border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant group"
                   >
                     <CardContent className="p-6">
-                      <a
-                        href={info.link}
-                        className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors duration-300"
-                      >
-                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                          <IconComponent className="w-6 h-6 text-primary" />
+                      {info.link ? (
+                        <a
+                          href={info.link}
+                          className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors duration-300"
+                        >
+                          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                            <IconComponent className="w-6 h-6 text-primary" />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-lg">
+                              {info.title}
+                            </h4>
+                            <p className="text-muted-foreground">
+                              {info.value}
+                            </p>
+                          </div>
+                        </a>
+                      ) : (
+                        <div className="flex items-center space-x-4 text-foreground">
+                          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                            <IconComponent className="w-6 h-6 text-primary" />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-lg">
+                              {info.title}
+                            </h4>
+                            <p className="text-muted-foreground">
+                              {info.value}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="font-semibold text-lg">
-                            {info.title}
-                          </h4>
-                          <p className="text-muted-foreground">{info.value}</p>
-                        </div>
-                      </a>
+                      )}
                     </CardContent>
                   </Card>
                 );
@@ -92,79 +84,7 @@ export const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card
-            className="gradient-card border-primary/10 animate-slide-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    {CONTACT_CONTENT.form.name.label} *
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="bg-background/50 border-primary/20 focus:border-primary transition-colors duration-300"
-                    placeholder={CONTACT_CONTENT.form.name.placeholder}
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    {CONTACT_CONTENT.form.email.label} *
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="bg-background/50 border-primary/20 focus:border-primary transition-colors duration-300"
-                    placeholder={CONTACT_CONTENT.form.email.placeholder}
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    {CONTACT_CONTENT.form.message.label} *
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="bg-background/50 border-primary/20 focus:border-primary transition-colors duration-300 resize-none"
-                    placeholder={CONTACT_CONTENT.form.message.placeholder}
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full gradient-primary hover:glow-primary transition-all duration-300 hover:scale-105"
-                  size="lg"
-                >
-                  <Send className="w-4 h-4 mr-2" />
-                  {CONTACT_CONTENT.submitButton}
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          <ContactForm />
         </div>
       </div>
     </section>

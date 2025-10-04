@@ -20,7 +20,8 @@ export const SITE_METADATA = {
 export const NAVIGATION_ITEMS = [
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'Contact', href: '#contact' },
+  { name: 'Resume', href: '/resume' },
 ];
 
 // Hero section content
@@ -75,14 +76,6 @@ export const ABOUT_CONTENT = {
 
 // Projects data
 export const PROJECTS_DATA = [
-  // {
-  //   title: "E-Commerce Platform",
-  //   description: "Full-stack e-commerce solution with user authentication, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
-  //   image: "project1.jpg",
-  //   technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-  //   // liveUrl: "https://demo-ecommerce.com",
-  //   githubUrl: "https://github.com/rohitsoni007/shopping-frontend"
-  // },
   {
     title: "CV Builder",
     description: "Full-stack CV builder with user authentication, template selection, and download options. Built with React, Node.js, and MongoDB.",
@@ -90,21 +83,11 @@ export const PROJECTS_DATA = [
     technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
     githubUrl: "https://github.com/rohitsoni007/cvbuilder-assessment"
   },
-
-  // {
-  //   title: "Social Media Mobile App",
-  //   description: "Cross-platform social media app with real-time messaging, photo sharing, and user profiles. Built with React Native and Firebase.",
-  //   image: "project2.jpg",
-  //   technologies: ["React Native", "Firebase", "Redux", "Expo"],
-  //   liveUrl: "https://demo-social.com",
-  //   githubUrl: "https://github.com/demo/social-app"
-  // },
   {
     title: "Task Management Dashboard | Jira Like",
     description: "Productivity app with drag-and-drop kanban boards, team collaboration, and progress tracking. Built with Next.js and PostgreSQL.",
     image: "jira.jpg",
     technologies: ["Next.js", "PostgreSQL", "TypeScript", "Tailwind"],
-    // liveUrl: "https://demo-tasks.com",
     githubUrl: "https://github.com/rohitsoni007/jira"
   }
 ];
@@ -139,13 +122,22 @@ export const CONTACT_CONTENT = {
       value: "Chandigarh, India",
     //   link: "#"
     }
-  ],
+  ] as Array<{ icon: string; title: string; value: string; link?: string }>,
   form: {
     name: { label: "Name", placeholder: "Your full name", required: true },
     email: { label: "Email", placeholder: "your.email@example.com", required: true },
     message: { label: "Message", placeholder: "Tell me about your project...", required: true }
   },
   submitButton: "Send Message"
+};
+
+// Google Forms configuration
+export const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScTG55i1tie_Uzq9RGSRFfBqyPvFsov2Hc17x7G_HwG0kSEdA/formResponse";
+
+export const FORM_FIELDS = {
+  NAME: "entry.526449419",
+  EMAIL: "entry.586427154",
+  MESSAGE: "entry.892892895"
 };
 
 // Footer content
@@ -175,3 +167,70 @@ export const SKILL_CATEGORIES = [
       skills: ["Git", "Docker", "AWS", "Firebase", "Vercel", "Postman", "Jest", "ESLint", "Webpack", "Vite"]
     }
   ];
+
+// Resume data
+export const RESUME_DATA = {
+  personalInfo: {
+    name: "Rohit Soni",
+    title: "Full-Stack MERN Developer & React Native Specialist",
+    email: "test@gmail.com",
+    github: "https://github.com/rohitsoni007",
+    linkedin: "https://linkedin.com/in/rohitsoni007",
+    location: "Ludhiana, India"
+  },
+  professionalSummary: "Passionate full-stack developer with 4+ years of experience building modern web and mobile applications. Specialized in MERN stack and React Native, creating solutions that are both technically robust and user-friendly. Proven track record of delivering end-to-end applications from concept to deployment.",
+  experience: [
+    {
+      position: "Senior MERN Stack Developer",
+      company: "Matrix Marketers",
+      period: "Sep 2022 - Nov 2023",
+      responsibilities: [
+        "Led development of full-stack web applications using MERN stack",
+        "Built cross-platform mobile apps with MERN & React Native serving 10K+ users",
+        "Implemented CI/CD pipelines reducing deployment time by 60%",
+        "Mentored junior developers and conducted code reviews"
+      ]
+    },
+    {
+      position: "Software Engineer",
+      company: "75Way Technologies",
+      period: "Aug 2021 - Sep 2022",
+      responsibilities: [
+        "Developed e-commerce platform with payment integration",
+        "Created RESTful APIs handling 1M+ requests daily",
+        "Optimized database queries improving performance by 40%",
+        "Collaborated with design team to implement responsive UIs"
+      ]
+    },
+     {
+      position: "Software Developer",
+      company: "Promatics Technologies",
+      period: "Jul 2019 - Aug 2020",
+      responsibilities: [
+        "Developed e-commerce platform with payment integration",
+        "Created RESTful APIs handling 1M+ requests daily",
+        "Optimized database queries improving performance by 40%",
+        "Collaborated with design team to implement responsive UIs"
+      ]
+    }
+  ],
+  projects: [
+    {
+      name: "CV Builder Platform",
+      technologies: "React, Node.js, MongoDB, Stripe, JWT",
+      description: "Full-stack CV builder with user authentication, template selection, and PDF download options. Features real-time preview and payment integration.",
+      sourceCode: "https://github.com/rohitsoni007/cvbuilder-assessment"
+    },
+    {
+      name: "Task Management Dashboard (Jira-like)",
+      technologies: "Next.js, PostgreSQL, TypeScript, Tailwind",
+      description: "Productivity app with drag-and-drop kanban boards, team collaboration, and progress tracking features.",
+      sourceCode: "https://github.com/rohitsoni007/jira"
+    }
+  ],
+  education: {
+    degree: "Master of Computer Applications",
+    institution: "Lovely Professional University",
+    period: "2014 - 2016"
+  }
+};
