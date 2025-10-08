@@ -27,13 +27,12 @@ export const Hero = () => {
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             {HERO_CONTENT.subtitle}{" "}
-            <span className="text-primary font-semibold">
-              {HERO_CONTENT.specializations[0]}
-            </span>{" "}
-            &{" "}
-            <span className="text-primary font-semibold">
-              {HERO_CONTENT.specializations[1]}
-            </span>
+            {HERO_CONTENT.specializations.map((specialization, index) => (
+              <span key={index} className="text-primary font-semibold">
+                {specialization}
+                {index < HERO_CONTENT.specializations.length - 1 && " & "}
+              </span>
+            ))}
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-xl mx-auto">
             {HERO_CONTENT.description}

@@ -30,7 +30,7 @@ export const HERO_CONTENT = {
   greeting: "Hi, I'm",
   name: "Rohit",
   subtitle: "Full-Stack Developer specializing in",
-  specializations: ["MERN Stack", "React Native"],
+  specializations: ["MERN Stack", "MEAN Stack","React Native"],
   description: "I build modern web applications and mobile apps that deliver exceptional user experiences",
   ctaButtons: [
     { text: "View My Work", target: "#projects" },
@@ -48,13 +48,13 @@ export const SOCIAL_LINKS = [
 // About section content
 export const ABOUT_CONTENT = {
   title: "About",
-  description: "I'm a passionate full-stack developer with 4+ years of experience building modern web and mobile applications. I specialize in the MERN stack and React Native, creating solutions that are both technically robust and user-friendly.",
+  description: "I'm a passionate full-stack developer with 4+ years of experience building modern web and mobile applications. I specialize in the MERN stack, MEAN stack and React Native, creating solutions that are both technically robust and user-friendly.",
   journey: "Started as a frontend developer and evolved into full-stack development. I've worked with startups and enterprises, building everything from e-commerce platforms to social media apps. Always learning and adapting to new technologies to deliver the best solutions.",
   features: [
     {
       icon: "Globe",
       title: "Frontend Development",
-      description: "Building responsive, interactive web applications with React, TypeScript, and modern CSS frameworks."
+      description: "Building responsive, interactive web applications with React, Angular, TypeScript, and modern CSS frameworks."
     },
     {
       icon: "Database",
@@ -152,7 +152,7 @@ export const FOOTER_CONTENT = {
 export const SKILL_CATEGORIES = [
     {
       title: "Frontend",
-      skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "Redux", "React Query"]
+      skills: ["React", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "Redux", "React Query"]
     },
     {
       title: "Backend", 
@@ -172,13 +172,13 @@ export const SKILL_CATEGORIES = [
 export const RESUME_DATA = {
   personalInfo: {
     name: "Rohit Soni",
-    title: "Full-Stack MERN Developer & React Native Specialist",
+    title: "Full-Stack MERN Developer, MEAN Developer & React Native Specialist",
     email: "test@gmail.com",
     github: "https://github.com/rohitsoni007",
     linkedin: "https://linkedin.com/in/rohitsoni007",
     location: "Ludhiana, India"
   },
-  professionalSummary: "Passionate full-stack developer with 4+ years of experience building modern web and mobile applications. Specialized in MERN stack and React Native, creating solutions that are both technically robust and user-friendly. Proven track record of delivering end-to-end applications from concept to deployment.",
+  professionalSummary: "Passionate full-stack developer with 4+ years of experience building modern web and mobile applications. Specialized in MERN stack, MEAN stack and React Native, creating solutions that are both technically robust and user-friendly. Proven track record of delivering end-to-end applications from concept to deployment.",
   experience: [
     {
       position: "Senior MERN Stack Developer",
@@ -207,7 +207,7 @@ export const RESUME_DATA = {
       company: "Promatics Technologies",
       period: "Jul 2019 - Aug 2020",
       responsibilities: [
-        "Developed e-commerce platform with payment integration",
+        "Led development of full-stack web applications using MERN, MEAN stack & serving 10K+ users",
         "Created RESTful APIs handling 1M+ requests daily",
         "Optimized database queries improving performance by 40%",
         "Collaborated with design team to implement responsive UIs"
