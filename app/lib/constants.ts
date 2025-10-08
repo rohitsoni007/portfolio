@@ -1,18 +1,18 @@
 // Site metadata
 export const SITE_METADATA = {
-  title: "MERN & React Native Developer | Portfolio",
-  description: "Full-stack MERN developer specializing in React Native mobile apps, Node.js backends, and modern web development. View my portfolio and projects.",
-  keywords: "MERN developer, React Native, Node.js, MongoDB, Express, React, JavaScript, TypeScript, mobile development",
-  author: "MERN & React Native Developer",
+  title: "MERN, MEAN & React Native Developer | Portfolio",
+  description: "Full-stack MERN MEAN developer specializing in React Native mobile apps, Node.js backends, and modern web development. View my portfolio and projects.",
+  keywords: "MERN developer, MEAN developer, React Native, Node.js, MongoDB, Express, React, JavaScript, TypeScript, mobile development",
+  author: "MERN, MEAN & React Native Developer",
   og: {
     type: "website",
-    title: "MERN & React Native Developer | Portfolio",
-    description: "Full-stack MERN developer specializing in React Native mobile apps and modern web development."
+    title: "MERN, MEAN & React Native Developer | Portfolio",
+    description: "Full-stack MERN MEAN developer specializing in React Native mobile apps and modern web development."
   },
   twitter: {
     card: "summary_large_image",
-    title: "MERN & React Native Developer | Portfolio",
-    description: "Full-stack MERN developer specializing in React Native mobile apps and modern web development."
+    title: "MERN, MEAN & React Native Developer | Portfolio",
+    description: "Full-stack MERN MEAN developer specializing in React Native mobile apps and modern web development."
   }
 };
 

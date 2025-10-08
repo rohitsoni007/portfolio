@@ -51,7 +51,7 @@ export const Footer = () => {
           <p className="text-muted-foreground flex items-center justify-center gap-2">
             © {currentYear} {HERO_CONTENT.name} Developer. Made with{" "}
             <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> using
-            React & TypeScript
+            React, Shadcn UI, Tailwind CSS, and ReactRouter.
           </p>
         </div>
       </div>
