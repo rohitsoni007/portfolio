@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Briefcase } from "lucide-react";
 import { CONTACT_CONTENT } from "@/lib/constants";
 import { ContactForm } from "./ContactForm";
 
@@ -8,6 +8,7 @@ export const Contact = () => {
     Mail: Mail,
     Phone: Phone,
     MapPin: MapPin,
+    Briefcase: Briefcase,
   };
 
   return (
@@ -47,6 +48,8 @@ export const Contact = () => {
                       {info.link ? (
                         <a
                           href={info.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors duration-300"
                         >
                           <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">

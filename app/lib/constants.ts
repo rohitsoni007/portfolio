@@ -121,6 +121,12 @@ export const CONTACT_CONTENT = {
       title: "Location",
       value: "Chandigarh, India",
     //   link: "#"
+    },
+    {
+      icon: "Briefcase",
+      title: "Upwork",
+      value: "View my profile",
+      link: "https://www.upwork.com/freelancers/~0156ed1795d1a103a3?mp_source=share"
     }
   ] as Array<{ icon: string; title: string; value: string; link?: string }>,
   form: {
