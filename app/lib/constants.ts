@@ -40,8 +40,8 @@ export const HERO_CONTENT = {
 
 // Social media links
 export const SOCIAL_LINKS = [
-  { name: "GitHub", url: "https://github.com/rohitsoni-dev", icon: "Github" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/rohitsoni-dev", icon: "Linkedin" },
+  { name: "GitHub", url: "https://github.com/rohitsoni007", icon: "Github" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/rohitsoni007", icon: "Linkedin" },
 //   { name: "Email", url: "mailto:alex@example.com", icon: "Mail" }
 ];
 
@@ -81,14 +81,14 @@ export const PROJECTS_DATA = [
     description: "Full-stack CV builder with user authentication, template selection, and download options. Built with React, Node.js, and MongoDB.",
     image: "cv-builder.jpg",
     technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-    githubUrl: "https://github.com/rohitsoni-dev/cvbuilder-assessment"
+    githubUrl: "https://github.com/rohitsoni007/cvbuilder-assessment"
   },
   {
     title: "Task Management Dashboard | Jira Like",
     description: "Productivity app with drag-and-drop kanban boards, team collaboration, and progress tracking. Built with Next.js and PostgreSQL.",
     image: "jira.jpg",
     technologies: ["Next.js", "PostgreSQL", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/rohitsoni-dev/jira"
+    githubUrl: "https://github.com/rohitsoni007/jira"
   }
 ];
 
@@ -180,8 +180,8 @@ export const RESUME_DATA = {
     name: "Rohit Soni",
     title: "Full-Stack MERN Developer, MEAN Developer & React Native Specialist",
     email: "test@gmail.com",
-    github: "https://github.com/rohitsoni-dev",
-    linkedin: "https://linkedin.com/in/rohitsoni-dev",
+    github: "https://github.com/rohitsoni007",
+    linkedin: "https://linkedin.com/in/rohitsoni007",
     location: "Ludhiana, India"
   },
   professionalSummary: "Passionate full-stack developer with 4+ years of experience building modern web and mobile applications. Specialized in MERN stack, MEAN stack and React Native, creating solutions that are both technically robust and user-friendly. Proven track record of delivering end-to-end applications from concept to deployment.",
@@ -225,13 +225,13 @@ export const RESUME_DATA = {
       name: "CV Builder Platform",
       technologies: "React, Node.js, MongoDB, Stripe, JWT",
       description: "Full-stack CV builder with user authentication, template selection, and PDF download options. Features real-time preview and payment integration.",
-      sourceCode: "https://github.com/rohitsoni-dev/cvbuilder-assessment"
+      sourceCode: "https://github.com/rohitsoni007/cvbuilder-assessment"
     },
     {
       name: "Task Management Dashboard (Jira-like)",
       technologies: "Next.js, PostgreSQL, TypeScript, Tailwind",
       description: "Productivity app with drag-and-drop kanban boards, team collaboration, and progress tracking features.",
-      sourceCode: "https://github.com/rohitsoni-dev/jira"
+      sourceCode: "https://github.com/rohitsoni007/jira"
     }
   ],
   education: {
