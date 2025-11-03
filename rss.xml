@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title><![CDATA[Blog | Rohit Soni]]></title>
+    <description><![CDATA[Sharing insights from my journey as a full-stack developer, covering MERN stack, React Native, and modern web development practices.]]></description>
+    <link>https://rohitsoni007.github.io/portfolio/blog</link>
+    <atom:link href="https://rohitsoni007.github.io/portfolio/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-US</language>
+    <managingEditor>Rohit Soni</managingEditor>
+    <webMaster>Rohit Soni</webMaster>
+    <lastBuildDate>Mon, 03 Nov 2025 15:14:38 GMT</lastBuildDate>
+    <generator>React Router Blog</generator>
+    
+    <item>
+      <title><![CDATA[Building Scalable APIs with Express.js]]></title>
+      <description><![CDATA[Brief description of your blog post...]]></description>
+      <link>https://rohitsoni007.github.io/portfolio/blog/building-scalable-apis-with-expressjs</link>
+      <guid>https://rohitsoni007.github.io/portfolio/blog/building-scalable-apis-with-expressjs</guid>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 GMT</pubDate>
+      <author>Rohit Soni</author>
+      <category>Tag1</category>
+      <category>Tag2</category>
+      <category>Tag3</category>
+    </item>
+  
+    <item>
+      <title><![CDATA[Getting Started with React Native: A Complete Guide]]></title>
+      <description><![CDATA[Learn how to build your first React Native app from scratch. This comprehensive guide covers setup, navigation, and best practices for mobile development.]]></description>
+      <link>https://rohitsoni007.github.io/portfolio/blog/getting-started-with-react-native</link>
+      <guid>https://rohitsoni007.github.io/portfolio/blog/getting-started-with-react-native</guid>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
+      <author>Rohit Soni</author>
+      <category>React Native</category>
+      <category>Mobile Development</category>
+      <category>JavaScript</category>
+      <category>Tutorial</category>
+    </item>
+  
+    <item>
+      <title><![CDATA[MERN Stack Best Practices for Scalable Applications]]></title>
+      <description><![CDATA[Discover essential best practices for building scalable MERN stack applications. Learn about project structure, security, performance optimization, and deployment strategies.]]></description>
+      <link>https://rohitsoni007.github.io/portfolio/blog/mern-stack-best-practices</link>
+      <guid>https://rohitsoni007.github.io/portfolio/blog/mern-stack-best-practices</guid>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 GMT</pubDate>
+      <author>Rohit Soni</author>
+      <category>MERN Stack</category>
+      <category>Best Practices</category>
+      <category>Node.js</category>
+      <category>React</category>
+      <category>MongoDB</category>
+    </item>
+  
+    <item>
+      <title><![CDATA[Why TypeScript is Essential for Modern React Development]]></title>
+      <description><![CDATA[Explore the benefits of using TypeScript with React and learn how it can improve your development experience, catch bugs early, and make your code more maintainable.]]></description>
+      <link>https://rohitsoni007.github.io/portfolio/blog/typescript-react-development</link>
+      <guid>https://rohitsoni007.github.io/portfolio/blog/typescript-react-development</guid>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 GMT</pubDate>
+      <author>Rohit Soni</author>
+      <category>TypeScript</category>
+      <category>React</category>
+      <category>JavaScript</category>
+      <category>Development</category>
+    </item>
+  
+    <item>
+      <title><![CDATA[Node.js Performance Optimization: Tips and Techniques]]></title>
+      <description><![CDATA[Learn essential techniques to optimize your Node.js applications for better performance, including profiling, caching strategies, and database optimization.]]></description>
+      <link>https://rohitsoni007.github.io/portfolio/blog/nodejs-performance-optimization</link>
+      <guid>https://rohitsoni007.github.io/portfolio/blog/nodejs-performance-optimization</guid>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 GMT</pubDate>
+      <author>Rohit Soni</author>
+      <category>Node.js</category>
+      <category>Performance</category>
+      <category>Optimization</category>
+      <category>Backend</category>
+    </item>
+  
+  </channel>
+</rss>

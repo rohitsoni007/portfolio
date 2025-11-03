@@ -1,27 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
-    <loc>https://rohitsoni.dev/</loc>
-    <lastmod>2025-09-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://rohitsoni007.github.io/portfolio</loc>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    
   </url>
   <url>
-    <loc>https://rohitsoni.dev/#about</loc>
-    <lastmod>2025-09-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://rohitsoni007.github.io/portfolio/blog</loc>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+    
+  </url>
+  <url>
+    <loc>https://rohitsoni007.github.io/portfolio/resume</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    
   </url>
   <url>
-    <loc>https://rohitsoni.dev/#projects</loc>
-    <lastmod>2025-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rohitsoni.dev/#contact</loc>
-    <lastmod>2025-09-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://rohitsoni007.github.io/portfolio/blog/building-scalable-apis-with-expressjs</loc>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://rohitsoni007.github.io/portfolio/blog/getting-started-with-react-native</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://rohitsoni007.github.io/portfolio/blog/mern-stack-best-practices</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2024-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://rohitsoni007.github.io/portfolio/blog/typescript-react-development</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2024-01-05</lastmod>
+  </url>
+  <url>
+    <loc>https://rohitsoni007.github.io/portfolio/blog/nodejs-performance-optimization</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2023-12-28</lastmod>
   </url>
 </urlset>
