@@ -27,7 +27,7 @@ export const Navigation = () => {
   const handleNavigation = (href: string) => {
     // If we're on the resume page and the link is a hash link,
     // navigate to the home page with the hash
-    if (location.pathname === "/resume" && href.startsWith("#")) {
+    if ((location.pathname === "/resume" || location.pathname === "/blog") && href.startsWith("#")) {
       window.location.href = `/${href}`;
       return;
     }
@@ -39,19 +39,28 @@ export const Navigation = () => {
     // For other links, let the Link component handle navigation
   };
 
+  const handleLogoClick = () => {
+    if ((location.pathname === "/resume" || location.pathname === "/blog")) {
+      window.location.href = `/`;
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: "smooth" })
+
+  }
+
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-sm border-b border-primary/10 shadow-lg"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-background/95 backdrop-blur-sm border-b border-primary/10 shadow-lg"
+        : "bg-transparent"
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={() => handleLogoClick()}
             className="text-2xl font-bold text-gradient hover:scale-105 transition-transform duration-300 cursor-pointer"
           >
             {HERO_CONTENT.siteName}

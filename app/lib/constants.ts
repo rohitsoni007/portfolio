@@ -22,6 +22,7 @@ export const NAVIGATION_ITEMS = [
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
   { name: 'Resume', href: '/resume' },
+  { name: 'Blog', href: '/blog' },
 ];
 
 // Hero section content
@@ -240,3 +241,38 @@ export const RESUME_DATA = {
     period: "2014 - 2016"
   }
 };
+
+// Blog data and configuration
+export const BLOG_CONFIG = {
+  title: "Blog",
+  subtitle: "Thoughts on development, technology, and building great software",
+  description: "Sharing insights from my journey as a full-stack developer, covering MERN stack, React Native, and modern web development practices."
+};
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  publishedAt: string;
+  readTime: number;
+  tags: string[];
+  featured: boolean;
+  image?: string;
+}
+
+// Note: Blog posts are now stored as markdown files in content/blog/
+// This keeps the BlogPost interface for type safety
+
+// Blog categories for filtering
+export const BLOG_CATEGORIES = [
+  "All",
+  "React Native",
+  "MERN Stack", 
+  "TypeScript",
+  "Node.js",
+  "Performance",
+  "Best Practices",
+  "Tutorial"
+];

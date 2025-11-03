@@ -4,12 +4,16 @@
   "type": "module",
   "homepage": "https://rohitsoni007.github.io/portfolio",
   "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
+    "build": "npm run build-blog-data && react-router build && npm run generate-rss",
+    "dev": "npm run build-blog-data && react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "predeploy": "npm run build",
     "deploy": "node scripts/copy-404.js && gh-pages -d build/client",
+    "build-blog-data": "node scripts/build-blog-data.js",
+    "clean-blog-data": "node scripts/clean-blog-data.js",
+    "generate-rss": "node scripts/generate-rss.js",
+    "create-post": "node scripts/create-blog-post.js",
     "sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
